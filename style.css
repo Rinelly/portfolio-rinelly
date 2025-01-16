@@ -138,4 +138,21 @@ figure img {
     background-size: 50%;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    
+}
+
+.icones-contato {
+ padding: 2rem;
+ 
+}
+
+footer span {
+    color: #F4F440;
+    font-size: 1rem;
+}
 
