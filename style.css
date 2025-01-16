@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #242424;
+    background-image: url("./assets/image/perfil.png");
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-size: 45%;
+    font-family:"Montserrat", serif; 
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+.logo-raposa {
+    padding: 2rem 6rem ;
+    }
+
+header nav#navbar{
+    margin-top: 2%;
+    padding: 0 3rem;
+}
+
+header nav#navbar ul.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header nav#navbar ul.nav-list li a {
+    color: #292929;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h1 {
+    background-image: radial-gradient(#F4F440,#A6A663, #f2f2cb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 0 0 2% 5%;
+} 
+
+h2 {
+    background-image: linear-gradient(#F4F440, #A6A663, #f2f2cb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 2% 0 2%;
+    word-wrap: break-word;
+    width: 30%;
+    padding: 0 0 1% 5%;
+}
+
+.icones-redes-sociais {
+    display: flex;
+    padding: 0 0 0 5%;
+}
+
+.icones-redes-sociais a {
+    margin-right: 2%; 
+}
+
+.icones-redes-sociais a:hover {
+    transform: scale(1.1);
+}
+
+.simbolo-dev{
+    width: 3%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-imagem-esquerda {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagem-esquerda {
+    width: 500px;
+    height: 600px;
+    background-image: url("./assets/image/esquerda.png");
+    background-repeat: no-repeat;
+    background-position: left 0 auto;
+    background-size: 50%;
+}
+
+h3 {
+    text-align: center;
+    color: #F4F440;
+    font-size: 1.5rem;
+}
+
+.sobre-mim {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.texto-sobre-mim {
+    display: block;
+    position: absolute;
+    margin: 12% 10% 10% 15%;
+    font-size: 1.6rem;
+    color: #f2f2cb;
+    align-items: center;
+    word-wrap: break-word;
+}
+figure {
+   text-align: center; 
+   margin: 5%;
+}
+
+figure img {
+    padding: 2rem;
+}
+
+.imagem-direita {
+    width: 500px;
+    height: 600px;
+    background-image: url("./assets/image/direita.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+
