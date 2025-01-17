@@ -122,20 +122,30 @@ h3 {
     word-wrap: break-word;
     padding: 0 0 0 2rem;
 }
+
+#secao-habilidades{
+    margin-top: 5%;
+}
+
 .imagens-habilidades {
    text-align: center; 
-   margin: 5%;
+   margin: 10% 0 5% 0;
+
 }
 
 .imagens-habilidades img {
     padding: 2rem;
 }
 
+#secao-projetos {
+    margin: 10% 0 8% 0;
+}
+
 .projetos{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% 2% 5% 2%;
+    margin: 2% 2% 5% 2%;
 }
 
 .projetos a {
@@ -143,7 +153,7 @@ h3 {
 }
 
 .projetos p {
-    margin-top: 2%;
+    margin: 2% 0 10% 0;
     color: #f2f2cb;
     word-wrap: break-word;
 }
