@@ -121,34 +121,63 @@ h3 {
     align-items: center;
     word-wrap: break-word;
 }
-figure {
+.imagens-habilidades {
    text-align: center; 
    margin: 5%;
 }
 
-figure img {
+.imagens-habilidades img {
     padding: 2rem;
 }
 
-.imagem-direita {
-    width: 500px;
-    height: 600px;
-    background-image: url("./assets/image/direita.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-footer{
+.secao-contato {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 5rem;
-    
 }
 
 .icones-contato {
- padding: 2rem;
- 
+    padding: 1rem;
+}
+
+.secao-contato form {
+    margin-left: 10%;  
+}
+
+input::placeholder, textarea::placeholder{
+    color: #242424;
+    font-weight: 400;
+    font-family:"Montserrat", serif; 
+}
+
+#nome, #email, #assunto, #msg {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 2%;
+}
+
+#msg {
+    height: 80px;
+}
+
+.btn-enviar {
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    color: #242424;
+    background-color: #F4F440;  
+    
+}
+
+.btn-enviar:hover{
+    background-color: #A6A663;  
+}
+
+footer{
+    text-align: center;
+    margin: 5% 0 3% 0;
 }
 
 footer span {
