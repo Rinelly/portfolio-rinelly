@@ -18,10 +18,10 @@
         </div> 
         <nav id="navbar">
             <ul class="nav-list">
-                <li><a href="/">SOBRE MIM</a></li>
-                <li><a href="/">HABILIDADES</a></li>
-                <li><a href="/">PROJETOS</a></li>
-                <li><a href="/">CONTATOS</a></li>
+                <li><a href="#secao-sobre-mim">SOBRE MIM</a></li>
+                <li><a href="#secao-habilidades">HABILIDADES</a></li>
+                <li><a href="#secao-projetos">PROJETOS</a></li>
+                <li><a href="#secao-contato">CONTATOS</a></li>
             </ul>
         </nav> 
     </header>
@@ -36,25 +36,33 @@
             </div>
             <img class="simbolo-dev" src="assets/image/simbolo.png" alt="simbolo do desenvolvedor">
         </section>  
-
         <section>
-            <h3 class="sobre-mim">SOBRE MIM</h3> 
+            <h3 class="sobre-mim" id="secao-sobre-mim">SOBRE MIM</h3> 
             <div class="container-imagem-esquerda">
                 <div class="imagem-esquerda"></div>  
                 <span class="texto-sobre-mim">Olá, eu sou Rinelly, formada em Análise e Desenvolvimento de Sistemas. Embora minha formação seja na área de tecnologia, estou em um  processo de transição de carreira. Estou determinada a aplicar meus conhecimentos acadêmicos e minha paixão pelo desenvolvimento de sistemas em um ambiente profissional, buscando novas oportunidades para crescer e contribuir com minhas expertise.</span>  
             </div>
-            <h3>HABILIDADES</h3>
+            <h3 id="secao-habilidades">HABILIDADES</h3>
             <figure class="imagens-habilidades">
                 <img src="assets/icon/html.svg" alt="Logo HTML 5">
                 <img src="assets/icon/css.svg" alt="Logo CSS">
                 <img src="assets/icon/js.svg" alt="Logo JS">
                 <img src="assets/icon/react.svg" alt="Logo React">
             </figure>
-            <h3>PROJETOS</h3>
-            <div>
+            <h3 id="secao-projetos">PROJETOS</h3>
+            <div class="projetos">
+                    <a href="https://decoder-fox.vercel.app/" target="_blank"><img src="assets/image/img-projeto1.png" alt="Imagem do Projeto DecoderFox">
+                    <p> Projeto criado com HTML e CSS para criptografar e descriptografar textos.</p> </a>
+                    <a href=""><img src="assets/image/img-projeto1.png" alt="Imagem do Projeto 1">
+                    <p> Destaque os principais objetivos, tecnologias utilizadas e resultados alcançados.</p> </a>
+                    <a href=""><img src="assets/image/img-projeto1.png" alt="Imagem do Projeto 1">
+                    <p> Destaque os principais objetivos, tecnologias utilizadas e resultados alcançados.</p> </a>
             </div>
         </section>
-        <h3>CONTATO</h3>
+        <div>
+            <h3 class="titulo-contato" id="secao-contato">CONTATO</h3>
+        </div>
+
         <div class="secao-contato">
             <div>
                 <img src="assets/image/img-contato.svg" alt="Imagem de fundo amarelo com o icone de e-mail no meio.">
@@ -81,7 +89,6 @@
         <footer>
             <span>Desenvolvido por Rinelly Vasconcelos</span>
         </footer>
-        
     </main>
 </body>
 </html>

@@ -22,15 +22,15 @@ header {
     display: flex;
     justify-content: space-between;
     
-    }
+}
 
 .logo-raposa {
     padding: 2rem 6rem ;
-    }
+}
 
 header nav#navbar{
     margin-top: 2%;
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
 header nav#navbar ul.nav-list{
@@ -120,6 +120,7 @@ h3 {
     color: #f2f2cb;
     align-items: center;
     word-wrap: break-word;
+    padding: 0 0 0 2rem;
 }
 .imagens-habilidades {
    text-align: center; 
@@ -128,6 +129,27 @@ h3 {
 
 .imagens-habilidades img {
     padding: 2rem;
+}
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 2% 5% 2%;
+}
+
+.projetos a {
+    text-align: center;
+}
+
+.projetos p {
+    margin-top: 2%;
+    color: #f2f2cb;
+    word-wrap: break-word;
+}
+
+.titulo-contato {
+    margin: 5%;
 }
 
 .secao-contato {
