@@ -13,36 +13,63 @@
 </head>
 <body>
     <header>
-        <div class="logo-raposa">
+        <div class="container">
+             <a href="#" class="logo-raposa">
             <img src="assets/image/raposa.svg" alt="Logo de uma raposa em preto e amarelo.">
+            </a> 
+            <nav class="navbar" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="#secao-sobre-mim">SOBRE MIM</a></li>
+                    <li><a href="#secao-habilidades">HABILIDADES</a></li>
+                    <li><a href="#secao-projetos">PROJETOS</a></li>
+                    <li><a href="#secao-contato">CONTATOS</a></li>
+                </ul>
+            </nav>
         </div> 
-        <nav id="navbar">
-            <ul class="nav-list">
-                <li><a href="#secao-sobre-mim">SOBRE MIM</a></li>
-                <li><a href="#secao-habilidades">HABILIDADES</a></li>
-                <li><a href="#secao-projetos">PROJETOS</a></li>
-                <li><a href="#secao-contato">CONTATOS</a></li>
-            </ul>
-        </nav> 
     </header>
     <main>
-        <section>
+        <section id="apresentacao">
             <h1>RINELLY<br>VASCONCELOS </h1>
             <h2>Eleve seu negócio a outro nível com um Front-end de qualidade!</h2>
             <div class="icones-redes-sociais">
-                <a href="https://www.linkedin.com/in/rinelly-vasconcelos-989297142/" target="_blank"><img src="./assets/icon/linkedin.svg" alt="Logo do Linkedin"></a>
-                <a href="https://github.com/Rinelly" target="_blank"><img src="./assets/icon/github.svg" alt="Logo do Gitub"></a>
-                <a href="https://www.instagram.com/rinellyvasconcelos/" target="_blank"><img src="./assets/icon/instagram.svg" alt="Logo do Instagram"></a>
+                <a href="https://www.linkedin.com/in/rinelly-vasconcelos-989297142/" target="_blank"><img src="./assets/icon/linkedin.svg" alt="Perfil de Rinelly no LinkedIn"></a>
+                <a href="https://github.com/Rinelly" target="_blank"><img src="./assets/icon/github.svg" alt="Perfil de Rinelly no Gitub"></a>
+                <a href="https://www.instagram.com/rinellyvasconcelos/" target="_blank"><img src="./assets/icon/instagram.svg" alt="Perfil de Rinelly no Instagram"></a>
             </div>
-            <img class="simbolo-dev" src="assets/image/simbolo.png" alt="simbolo do desenvolvedor">
+            <img class="simbolo-dev" src="assets/image/simbolo.png" alt="">
         </section>  
-        <section>
-            <h3 class="sobre-mim" id="secao-sobre-mim">SOBRE MIM</h3> 
-            <div class="container-imagem-esquerda">
+        <section id="secao-sobre-mim">
+            <h3 class="sobre-mim">SOBRE MIM</h3> 
+            <div class="sobre-container">
                 <div class="imagem-esquerda"></div>  
-                <span class="texto-sobre-mim">Olá, eu sou Rinelly, formada em Análise e Desenvolvimento de Sistemas. Embora minha formação seja na área de tecnologia, estou em um  processo de transição de carreira. Estou determinada a aplicar meus conhecimentos acadêmicos e minha paixão pelo desenvolvimento de sistemas em um ambiente profissional, buscando novas oportunidades para crescer e contribuir com minhas expertise.</span>  
+                <p class="texto-sobre-mim">
+                    Olá, eu sou Rinelly, formada em Análise e Desenvolvimento de Sistemas. Embora minha formação seja na área de tecnologia, estou em um processo de transição de carreira. Estou determinada a aplicar meus conhecimentos acadêmicos e minha paixão pelo desenvolvimento de sistemas em um ambiente profissional, buscando novas oportunidades para crescer e contribuir com minhas expertise.
+                </p>   
+            <div class="jornada">
+                <h4 class="titulo-timeline">Minha Jornada</h4>
+                <ul class="timeline-lista">
+                    <li>
+                        <span class="ano">🎓 2018</span>
+                        <p>Início da graduação em Análise e Desenvolvimento de Sistemas.</p>
+                    </li>
+                    <li>
+                        <span class="ano">💻 2021</span>
+                        <p>Formação concluída e primeiros projetos pessoais em front-end.</p>
+                    </li>
+                    <li>
+                        <span class="ano">🔁 2023</span>
+                        <p>Transição de carreira iniciada com foco em desenvolvimento web.</p>
+                    </li>
+                    <li>
+                        <span class="ano">🚀 2025</span>
+                        <p>Portfólio profissional no ar e busca ativa por oportunidades.</p>
+                    </li>
+                </ul>
+            </div>                
             </div>
-            <h3 id="secao-habilidades">HABILIDADES</h3>
+        </section>
+
+        <h3 id="secao-habilidades">HABILIDADES</h3>
             <figure class="imagens-habilidades">
                 <img src="assets/icon/html.svg" alt="Logo HTML 5">
                 <img src="assets/icon/css.svg" alt="Logo CSS">

@@ -19,30 +19,50 @@ a{
 }
 
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+    padding: 1.5rem 0;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-.logo-raposa {
-    padding: 2rem 6rem ;
+.logo-raposa img {
+    max-height: 60px;
 }
 
-header nav#navbar{
+header nav.navbar{
     margin-top: 2%;
     padding: 0 1rem;
 }
 
-header nav#navbar ul.nav-list{
+.nav-list {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-header nav#navbar ul.nav-list li a {
-    color: #292929;
+.nav-list li a {
+    color: #F4F440;
     font-size: 1rem;
     font-weight: 600;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 4px;
+}
+
+.nav-list li a:hover {
+    color: #A6A663;
+    border-bottom: 2px solid #A6A663;
 }
 
 h1 {
@@ -92,15 +112,6 @@ h2 {
     justify-content: space-between;
 }
 
-.imagem-esquerda {
-    width: 500px;
-    height: 600px;
-    background-image: url("./assets/image/esquerda.png");
-    background-repeat: no-repeat;
-    background-position: left 0 auto;
-    background-size: 50%;
-}
-
 h3 {
     text-align: center;
     color: #F4F440;
@@ -112,16 +123,111 @@ h3 {
     text-align: center;
 }
 
-.texto-sobre-mim {
-    display: block;
-    position: absolute;
-    margin: 12% 10% 10% 15%;
-    font-size: 1.6rem;
-    color: #f2f2cb;
-    align-items: center;
-    word-wrap: break-word;
-    padding: 0 0 0 2rem;
+.sobre-container {
+    position: relative;
+    max-width: 100%;
+    margin: 5% auto;
+    padding: 0 4rem;
+    min-height: 400px; /* altera o tamanho da imagem */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
 }
+
+.imagem-esquerda {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px; /* altera o tamanho da imagem */
+    background-image: url("./assets/image/esquerda.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    z-index: 0;
+    margin-bottom: 2rem;
+}
+
+.texto-sobre-mim {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    color: #f2f2cb;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.conteudo-sobre {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.jornada {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.03); 
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.titulo-timeline {
+    color: #F4F440;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    text-align: center;
+}
+
+.timeline-lista {
+    list-style: none;
+    padding-left: 0;
+    color: #f2f2cb;
+    text-align: left;
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid #F4F440;
+}
+
+.timeline-lista li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+    padding-left: 1rem;
+}
+
+.timeline-lista li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #F4F440;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.ano {
+    font-weight: bold;
+    color: #F4F440;
+    display: inline-block;
+    width: 60px;
+}
+
+
+
+
+
+
+
 
 #secao-habilidades{
     margin-top: 5%;
@@ -216,4 +322,52 @@ footer span {
     color: #F4F440;
     font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+
+    .conteudo-sobre {
+        gap: 1rem;
+    }
+
+    .imagem-esquerda {
+        display: none;
+    }
+
+    .texto-sobre-mim {
+        padding: 1rem;
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .jornada {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .timeline-lista {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .ano {
+        display: block;
+        width: auto;
+        margin-bottom: 0.3rem;
+    }
+
+    .timeline-lista li {
+        padding-left: 0;
+    }
+
+    .timeline-lista li::before {
+        display: none;
+    }
+}
+
 
