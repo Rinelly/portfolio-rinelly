@@ -3,9 +3,7 @@
   background: url('../assets/image/simbolo.png') no-repeat center bottom;
   background-size: 50px;
   background-position: center calc(100% - 100px); /* ajusta a altura da imagem */
-  /* background-position: bottom auto; */
 }
-
 
 h1 {
     background-image: radial-gradient(#F4F440,#A6A663, #f2f2cb);
