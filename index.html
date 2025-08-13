@@ -12,15 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Header contendo logo e navegação principal-->
     <header>
         <div class="container">
+            <!-- Logo da página que retorna para a seção de apresentação -->
             <a href="#apresentacao" class="logo-raposa">
-            <img src="assets/image/raposa.svg" alt=" "></a> 
-                <!-- Botão para abrir/fechar menu -->
-            <button class="menu-toggle" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"> ☰ 
-            </button>
-
-            <nav class="navbar" aria-label="Menu principal">
+            <img src="assets/image/raposa.svg" alt=""></a> 
+            <!-- Botão para abrir/fechar menu colapsável -->
+            <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"/>
+                </svg></button>
+            <!-- Menu de navegação principal -->
+            <nav id="menu-principal" aria-label="Menu principal">
                 <ul class="nav-list">
                     <li><a href="#secao-sobre-mim">SOBRE MIM</a></li>
                     <li><a href="#secao-habilidades">HABILIDADES</a></li>
@@ -30,48 +34,52 @@
             </nav>
         </div> 
     </header>
+    <!-- Conteúdo principal da página -->
     <main>
         <!-- Seção Apresentação -->
         <section id="apresentacao">
-            <h1>RINELLY<br>VASCONCELOS</h1>
+            <h1><span>RINELLY</span><br><span>VASCONCELOS</span></h1>
+            <!-- Subtítulo/descrição -->
             <h2>Eleve seu negócio a outro nível com um Front-end de qualidade!</h2>
-            <div class="icones-redes-sociais">
-                <a href="https://www.linkedin.com/in/rinelly-vasconcelos-989297142/" target="_blank" rel="noopener noreferrer"><img src="assets/icon/linkedin.svg" alt="Perfil de Rinelly no LinkedIn"></a>
+            <!-- Ícones de redes sociais -->
+            <ul class="icones-redes-sociais">
+                <li><a href="https://www.linkedin.com/in/rinelly-vasconcelos-989297142/" target="_blank" rel="noopener noreferrer"><img src="assets/icon/linkedin.svg" alt="Perfil de Rinelly no LinkedIn">
+                </a></li>
 
-                <a href="https://github.com/Rinelly" target="_blank" rel="noopener noreferrer"><img src="assets/icon/github.svg" alt="Perfil de Rinelly no GitHub">
-                </a>
+                <li><a href="https://github.com/Rinelly" target="_blank" rel="noopener noreferrer"><img src="assets/icon/github.svg" alt="Perfil de Rinelly no GitHub">
+                </a></li>
 
-                <a href="https://www.instagram.com/rinellyvasconcelos/" target="_blank" rel="noopener noreferrer"><img src="assets/icon/instagram.svg" alt="Perfil de Rinelly no Instagram">
-                </a>
-            </div>
-            <img class="simbolo-dev" src="assets/image/simbolo.png" alt="">
+                <li><a href="https://www.instagram.com/rinellyvasconcelos/" target="_blank" rel="noopener noreferrer"><img src="assets/icon/instagram.svg" alt="Perfil de Rinelly no Instagram">
+                </a></li>
+            </ul>
         </section>  
 
         <!-- Seção Sobre Mim -->
         <section id="secao-sobre-mim">
             <h3 class="sobre-mim">SOBRE MIM</h3> 
             <div class="sobre-container">
-                <div class="imagem-esquerda"></div>  
+                <!-- Texto de apresentação -->
                 <p class="texto-sobre-mim">
-                    Olá, eu sou Rinelly, formada em Análise e Desenvolvimento de Sistemas. Embora minha formação seja na área de tecnologia, estou em um processo de transição de carreira. Estou determinada a aplicar meus conhecimentos acadêmicos e minha paixão pelo desenvolvimento de sistemas em um ambiente profissional, buscando novas oportunidades para crescer e contribuir com minhas expertises.
+                    Olá, eu sou Rinelly, formada em Análise e Desenvolvimento de Sistemas. Embora minha formação seja na área de tecnologia, estou em um processo de transição de carreira. Estou determinada a aplicar meus conhecimentos acadêmicos e minha paixão pelo desenvolvimento de sistemas em um ambiente profissional, buscando novas oportunidades para crescer e contribuir com minhas expertise.
                 </p>   
+                <!-- Timeline da jornada profissional -->
                 <div class="jornada">
                     <h4 class="titulo-timeline">Minha Jornada</h4>
                     <ul class="timeline-lista">
                         <li>
-                            <span class="ano">🎓 2018</span>
+                            <span class="ano" ole="img">🎓 2018</span>
                             <p>Início da graduação em Análise e Desenvolvimento de Sistemas.</p>
                         </li>
                         <li>
-                            <span class="ano">💻 2021</span>
+                            <span class="ano" role="img">💻 2021</span>
                             <p>Formação concluída e primeiros projetos pessoais em front-end.</p>
                         </li>
                         <li>
-                            <span class="ano">🔁 2023</span>
+                            <span class="ano" role="img">🔁 2023</span>
                             <p>Transição de carreira iniciada com foco em desenvolvimento web.</p>
                         </li>
                         <li>
-                            <span class="ano">🚀 2025</span>
+                            <span class="ano" role="img">🚀 2025</span>
                             <p>Portfólio profissional no ar e busca ativa por oportunidades.</p>
                         </li>
                     </ul>
@@ -80,56 +88,65 @@
         </section>
 
         <!-- Seção Habilidades -->
-         <section>
-            <h3 id="secao-habilidades">HABILIDADES</h3>
-            <figure class="imagens-habilidades">
-                <img src="assets/icon/html.svg" alt="Logo HTML 5">
-                <img src="assets/icon/css.svg" alt="Logo CSS">
-                <img src="assets/icon/js.svg" alt="Logo JS">
-                <img src="assets/icon/react.svg" alt="Logo React">
-            </figure>
+         <section id="secao-habilidades">
+            <h3>HABILIDADES</h3>
+            <ul class="imagens-habilidades">
+                <li>
+                    <img src="assets/icon/html.svg" alt="Logo HTML 5">
+                </li>
+                <li>
+                    <img src="assets/icon/css.svg" alt="Logo CSS">
+                </li>
+                <li>
+                    <img src="assets/icon/js.svg" alt="Logo JS">
+                </li>
+                <li>
+                    <img src="assets/icon/react.svg" alt="Logo React">
+                </li>
+            </ul>
          </section>
 
         <!-- Seção Projetos -->
-        <section>
-            <h3 id="secao-projetos">PROJETOS</h3>
+        <section id="secao-projetos">
+            <h3>PROJETOS</h3>
             <div class="projetos">
-                <a href="https://decoder-fox.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="assets/image/img-projeto1.png" alt="Imagem do Projeto DecoderFox">
-                <p> Projeto criado com HTML e CSS para criptografar e descriptografar textos.</p> 
-                </a>
-
-                <a href="https://tabata-oliveira.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="assets/image/img-projeto2.png" alt="Imagem do Projeto Tabata Oliveira">
-                <p> Projeto de página de links criada com HTML e CSS para uso na Bio do Instagram.</p>
-                </a>
-
-                <a href="https://fokus-alura-psi.vercel.app/" target="_blank" rel="noopener noreferrer"><img src="assets/image/img-projeto3.png" alt="Imagem do Projeto Fokus">
-                <p> Projeto com função de pomodoro, desenvolvido com HTML, CSS e JavaScript.</p>
-                </a>
+                <article>
+                    <a href="https://decoder-fox.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto DecoderFox em nova aba"><img src="assets/image/img-projeto1.png" alt="Screenshot do projeto DecoderFox"></a>
+                    <p>Projeto criado com HTML e CSS para criptografar e descriptografar textos.</p> 
+                </article>
+                <article>
+                    <a href="https://tabata-oliveira.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Tabata Oliveira em nova aba"><img src="assets/image/img-projeto2.png" alt="Screenshot do Projeto Tabata Oliveira"></a>
+                    <p>Projeto de página de links criada com HTML e CSS para uso na Bio do Instagram.</p>
+                </article>
+                <article>
+                    <a href="https://fokus-alura-psi.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto Fokus em nova aba"><img src="assets/image/img-projeto3.png" alt="Screenshot do Projeto Fokus"></a>
+                    <p>Projeto com função de pomodoro, desenvolvido com HTML, CSS e JavaScript.</p>
+                </article>
             </div>
         </section>
        
         <!-- Seção Contato -->
-        <section>
-            <div>
-                <h3 class="titulo-contato" id="secao-contato">CONTATO</h3>
-            </div>
+        <section id="secao-contato">
+            <h3>CONTATO</h3>
             <div class="secao-contato">
+                <!-- Imagem decorativa -->
                 <div>
-                    <img src="assets/image/img-contato.svg" alt="Imagem de fundo amarelo com o ícone de e-mail no meio.">
+                    <img src="assets/image/img-contato.svg" alt="" aria-hidden="true" class="imagem-contato">
                 </div>
+                <!-- Formulário de contato -->
                 <div class="formulario">
                     <form action="" method="post">
                         <div>
                             <label for="nome">Nome:</label>
-                            <input type="text" id="nome" placeholder="Nome" required />
+                            <input type="text" id="nome" name= "nome" placeholder="Nome" required />
                         </div>
-                        <div>
+                        <div> 
                             <label for="email">E-mail:</label>
-                            <input type="email" id="email" placeholder="E-mail"required />
+                            <input type="email" id="email" name="email" placeholder="E-mail"required />
                         </div>
                         <div>
                             <label for="assunto">Assunto:</label>
-                            <input type="text" id="assunto" placeholder="Assunto"/>
+                            <input type="text" id="assunto" name="assunto" placeholder="Assunto"/>
                         </div>
                         <div>
                             <label for="msg">Mensagem:</label>
@@ -147,6 +164,7 @@
     <footer>
         <span>Desenvolvido por Rinelly Vasconcelos</span>
     </footer>
+    <!-- Script JavaScript principal -->
     <script src="index.js"></script>
 </body>
 </html>

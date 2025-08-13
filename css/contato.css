@@ -3,8 +3,11 @@
 }
 
 .secao-contato {
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
     align-items: center;
 }
 
@@ -12,7 +15,7 @@
     padding: 1rem;
 }
 
-.secao-contato form {
+.secao-contato form{
     margin-left: 10%;  
 }
 

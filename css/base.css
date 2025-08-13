@@ -13,11 +13,12 @@
 }
 
 body {
-    height: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
     background-color: var(--cor-fundo);
     background-image: url("../assets/image/perfil.png");
     background-repeat: no-repeat;
-    background-position: right 0px;
+    background-position: right top;
     background-size: 45%;
     font-family: var(--fonte-principal);
 }

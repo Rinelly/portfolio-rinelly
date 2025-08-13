@@ -1,4 +1,3 @@
-
 .sobre-mim {
     margin-top: 10%;
     text-align: center;
@@ -16,18 +15,20 @@
     align-items: flex-start;
 }
 
-.imagem-esquerda {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 400px; /*altera o tamanho da imagem*/
+.sobre-container::before{
+    content: '';
+    position: absolute; /* posição em relação ao .sobre-container */
+    left: 0;            /* distancia da borda esquerda */
+    top: 0;             /* distancia da borda superior */
+    width: 25%;       /* largura relativa ao container*/
+    max-width: 400px;
+    height: 100%;       /* altura do container */
     background-image: url("../assets/image/esquerda.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
-    z-index: 0;
-    margin-bottom: 2rem;
+    z-index: 0;         /* atrás do texto */
+    pointer-events: none; /* garante que não interfira em cliques */
 }
 
 .texto-sobre-mim {
@@ -69,3 +70,5 @@
     display: inline-block;
     width: 60px;
 }
+
+

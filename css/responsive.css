@@ -1,0 +1,269 @@
+/* Responsividade para imagem do background */
+@media (max-width: 768px) {
+    body {
+        background-size: 30%; /* reduz o tamanho da imagem */
+        background-position: right top; /* mantém no topo à direita */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: 20%; 
+        background-position: right top;
+    }
+}
+
+/*Responsividade para o botão toggle*/
+@media (max-width: 1398px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    #menu-principal {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        max-width: 300px;
+        padding: 1rem;
+        z-index: 20;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+       
+    }
+
+    #menu-principal.ativo {
+        display: flex;
+    }
+
+    #menu-principal .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Responsividade da seção apresentação */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        margin-left: 3%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        width: 80%;
+        padding-left: 3%;
+    }
+
+    .icones-redes-sociais {
+        padding-left: 3%;
+        flex-wrap: wrap;
+    }
+
+    .icones-redes-sociais a {
+        margin-right: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #apresentacao {
+        background-size: 40px;
+        background-position: bottom center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin-left: 2%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        width: 90%;
+        padding-left: 2%;
+    }
+
+    .icones-redes-sociais {
+        justify-content: flex-start;
+        padding-left: 2%;
+    }
+
+    #apresentacao {
+        background-size: 30px;
+    }
+}
+
+/* Responsividade da seção Sobre Mim */
+@media (max-width: 768px) {
+    .sobre-container {
+        padding: 0 2rem;
+    }
+
+    .sobre-container::before {
+        width: 40%;
+        max-width: 200px;
+        height: 100%;
+        left: 0;
+    }
+
+    .texto-sobre-mim {
+        font-size: 1rem;
+        padding: 0.5rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .conteudo-sobre {
+        gap: 1.5rem;
+    }
+
+    .jornada {
+        padding: 1rem;
+        margin: 1rem auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-container {
+        padding: 0 1rem;
+    }
+
+    .sobre-container::before {
+        width: 60%;
+        max-width: 150px;
+    }
+
+    .texto-sobre-mim {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .jornada {
+        padding: 0.8rem;
+        margin: 0.5rem auto;
+    }
+
+    .ano {
+        width: 50px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsividade da seção Habilidades */
+@media (max-width: 768px) {
+    #secao-habilidades {
+        margin-top: 5%;
+    }
+
+    .imagens-habilidades {
+        text-align: center;
+        margin: 8% 0 4% 0;
+    }
+        .imagens-habilidades img {
+        padding: 1rem;
+        max-width: 60px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagens-habilidades {
+        margin: 6% 0 3% 0;
+    }
+
+    .imagens-habilidades img {
+        padding: 0.5rem;
+        max-width: 50px;
+    }
+}
+
+/* Responsividade da seção Projetos */
+@media (max-width: 768px) {
+    #secao-projetos {
+        margin: 8% 0 5% 0;
+    }
+
+    .projetos {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2% 2% 5% 2%;
+    }
+
+    .projetos a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .projetos p {
+        margin: 1% 0 5% 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #secao-projetos {
+        margin: 6% 0 4% 0;
+    }
+
+    .projetos p {
+        font-size: 0.8rem;
+        margin: 1% 0 4% 0;
+    }
+}
+
+/* Responsividade da seção Contato */
+@media (max-width: 768px) {
+    .secao-contato {
+        flex-direction: column;
+        padding: 0 2rem;
+        gap: 1.5rem;
+    }
+
+    .secao-contato .formulario {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .secao-contato .imagem-contato {
+        width: 80%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    #nome, #email, #assunto, #msg {
+        width: 100%;
+    }
+
+    .btn-enviar {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .secao-contato {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    .secao-contato .imagem-contato {
+        width: 70%;
+        max-width: 200px;
+    }
+    
+    #nome, #email, #assunto, #msg {
+        width: 100%;
+    }
+
+    .btn-enviar {
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+
+

@@ -1,11 +1,21 @@
+#apresentacao {
+  height: 100vh;
+  background: url('../assets/image/simbolo.png') no-repeat center bottom;
+  background-size: 50px;
+  background-position: center calc(100% - 100px); /* ajusta a altura da imagem */
+  /* background-position: bottom auto; */
+}
+
+
 h1 {
     background-image: radial-gradient(#F4F440,#A6A663, #f2f2cb);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
-    font-size: 4rem;
-    margin: 0 0 2% 5%;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-left: 5%;
+    padding: 1.5rem;
 } 
 
 h2 {
@@ -13,29 +23,36 @@ h2 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     margin: 2% 0 2%;
     word-wrap: break-word;
-    width: 30%;
-    padding: 0 0 1% 5%;
+    width: 50%;
+    margin-left: 5%;
+    padding: 1.5rem;
 }
 
 .icones-redes-sociais {
     display: flex;
-    padding: 0 0 0 5%;
+    list-style: none;
+    margin-left: 5%;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .icones-redes-sociais a {
-    margin-right: 2%; 
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.icones-redes-sociais a:last-child {
+    margin-right: 0; /* remove margin do último ícone */
 }
 
 .icones-redes-sociais a:hover {
     transform: scale(1.1);
 }
 
-.simbolo-dev{
-    width: 3%;
-    display: block;
-    margin: 0 auto;
-}
+
+
+
