@@ -1,0 +1,49 @@
+.titulo-contato {
+    margin: 5%;
+}
+
+.secao-contato {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icones-contato {
+    padding: 1rem;
+}
+
+.secao-contato form {
+    margin-left: 10%;  
+}
+
+input::placeholder, textarea::placeholder{
+    color: var(--cor-fundo);
+    font-weight: 400;
+    font-family:"Montserrat", serif; 
+}
+
+#nome, #email, #assunto, #msg {
+    width: 400px;
+    height: 40px;
+    margin-bottom: 2%;
+}
+
+#msg {
+    height: 80px;
+}
+
+.btn-enviar {
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    color: var(--cor-fundo);
+    background-color: var(--cor-principal);  
+    transform: translateX(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-enviar:hover{
+    background-color: var(--cor-secundaria);  
+}

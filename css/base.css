@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #F4F440;
+    --cor-secundaria: #A6A663;
+    --cor-texto-claro: #f2f2cb;
+    --cor-fundo: #242424;
+    --fonte-principal: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: var(--cor-fundo);
+    background-image: url("../assets/image/perfil.png");
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-size: 45%;
+    font-family: var(--fonte-principal);
+}
+
+a{
+    text-decoration: none;
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
+
+h3 {
+    text-align: center;
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+}

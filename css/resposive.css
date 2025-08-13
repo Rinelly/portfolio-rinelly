@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+
+    .conteudo-sobre {
+        gap: 1rem;
+    }
+
+    .imagem-esquerda {
+        display: none;
+    }
+
+    .texto-sobre-mim {
+        padding: 1rem;
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .jornada {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .timeline-lista {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .ano {
+        display: block;
+        width: auto;
+        margin-bottom: 0.3rem;
+    }
+
+    .timeline-lista li {
+        padding-left: 0;
+    }
+
+    .timeline-lista li::before {
+        display: none;
+    }
+}
+
+

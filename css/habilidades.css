@@ -1,0 +1,13 @@
+#secao-habilidades{
+    margin-top: 5%;
+}
+
+.imagens-habilidades {
+   text-align: center; 
+   margin: 10% 0 5% 0;
+
+}
+
+.imagens-habilidades img {
+    padding: 2rem;
+}

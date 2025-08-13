@@ -1,0 +1,27 @@
+/* Esconde menu no mobile por padrão */
+.navbar {
+  display: none;
+}
+
+/* Quando ativo, mostra */
+.navbar.ativo {
+  display: block;
+}
+
+/* Estilo do botão hambúrguer */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Desktop: menu sempre visível, botão escondido */
+@media (min-width: 768px) {
+  .navbar {
+    display: block;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}

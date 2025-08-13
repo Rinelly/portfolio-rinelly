@@ -1,0 +1,71 @@
+
+.sobre-mim {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.sobre-container {
+    position: relative;
+    max-width: 100%;
+    margin: 5% auto;
+    padding: 0 4rem;
+    min-height: 400px; /* altera o tamanho da imagem */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.imagem-esquerda {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 400px; /*altera o tamanho da imagem*/
+    background-image: url("../assets/image/esquerda.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    z-index: 0;
+    margin-bottom: 2rem;
+}
+
+.texto-sobre-mim {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    color: var(--cor-texto-claro);
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.conteudo-sobre {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.jornada {
+    margin: auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: var(--cor-texto-claro);
+}
+
+.ano {
+    font-weight: bold;
+    color: var(--cor-principal);
+    display: inline-block;
+    width: 60px;
+}

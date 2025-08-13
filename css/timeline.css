@@ -1,0 +1,33 @@
+
+.titulo-timeline {
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    text-align: center;
+}
+
+.timeline-lista {
+    list-style: none;
+    padding-left: 0;
+    color: var(--cor-texto-claro);
+    text-align: left;
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid var(--cor-principal);
+}
+
+.timeline-lista li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.timeline-lista li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--cor-principal);
+    font-size: 1.2rem;
+    line-height: 1;
+}

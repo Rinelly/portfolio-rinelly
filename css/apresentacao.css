@@ -1,0 +1,41 @@
+h1 {
+    background-image: radial-gradient(#F4F440,#A6A663, #f2f2cb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 0 0 2% 5%;
+} 
+
+h2 {
+    background-image: linear-gradient(#F4F440, #A6A663, #f2f2cb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 2% 0 2%;
+    word-wrap: break-word;
+    width: 30%;
+    padding: 0 0 1% 5%;
+}
+
+.icones-redes-sociais {
+    display: flex;
+    padding: 0 0 0 5%;
+}
+
+.icones-redes-sociais a {
+    margin-right: 2%; 
+}
+
+.icones-redes-sociais a:hover {
+    transform: scale(1.1);
+}
+
+.simbolo-dev{
+    width: 3%;
+    display: block;
+    margin: 0 auto;
+}
