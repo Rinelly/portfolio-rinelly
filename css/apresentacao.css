@@ -23,7 +23,6 @@ h2 {
     -webkit-text-fill-color: transparent;
     font-weight: 400;
     font-size: clamp(1.5rem, 2vw, 2rem);
-    margin: 2% 0 2%;
     word-wrap: break-word;
     width: 50%;
     margin-left: 5%;
