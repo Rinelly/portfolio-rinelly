@@ -47,13 +47,13 @@
 
 /* Responsividade da seção apresentação */
 @media (max-width: 768px) {
-     #apresentacao {
+    /* #apresentacao {
         min-height: 50vh;
         height: auto;
         padding-top: 2rem;
         background-size: 30px;
         background-position: center bottom;
-    }
+    } */
 
     h1 {
         font-size: 3rem;
