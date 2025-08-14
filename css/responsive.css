@@ -47,28 +47,22 @@
 
 /* Responsividade da seção apresentação */
 @media (max-width: 768px) {
-    /* #apresentacao {
+    #apresentacao {
         min-height: 50vh;
         height: auto;
-        padding-top: 2rem;
-        background-size: 30px;
+        padding-top: 2rem; 
         background-position: center bottom;
-    } */
-
-    h1 {
-        font-size: 3rem;
-        margin-left: 3%;
     }
 
     h2 {
-        font-size: 1.5rem;
-        width: 80%;
-        padding-left: 3%;
+        font-size: 1.2rem;
+        width: 90%;
     }
-
+    
     .icones-redes-sociais {
-        padding-left: 3%;
-        flex-wrap: wrap;
+       justify-content: center;
+       padding-left: 0;
+       margin-bottom: clamp(5rem, 5vw, 2rem);
     }
 
     .icones-redes-sociais a {
@@ -76,28 +70,24 @@
         margin-bottom: 0.5rem;
     }
 }
-
+/*Versão smartphone*/
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-        margin-left: 2%;
+    #apresentacao{
+        background-size: 30px;
     }
 
     h2 {
         font-size: 1.2rem;
         width: 90%;
-        padding-left: 2%;
     }
 
-    .icones-redes-sociais {
-        justify-content: flex-start;
-        padding-left: 2%;
-    }
-
-    #apresentacao {
-        background-size: 30px;
+   .icones-redes-sociais {
+       gap: 2rem;
+       margin-bottom: clamp(5rem, 5vw, 2rem);
     }
 }
+
+
 
 /* Responsividade da seção Sobre Mim */
 @media (max-width: 768px) {
