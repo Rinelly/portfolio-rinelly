@@ -93,7 +93,7 @@
 /* Responsividade da seção Sobre Mim */
 @media (max-width: 768px) {
     #secao-sobre-mim{
-        margin-top: clamp(5rem, 5vw, 2rem);
+        margin-top: clamp(4rem, 5vw, 2rem);
     }
     .sobre-container {
         padding: 0 2rem;
@@ -126,9 +126,9 @@
 
 @media (max-width: 480px) {
     #secao-sobre-mim{
-        margin-top: clamp(5rem, 5vw, 2rem);
+        margin-top: clamp(4rem, 5vw, 2rem);
     }
-    
+
     .sobre-container {
         padding: 0 1rem;
     }
