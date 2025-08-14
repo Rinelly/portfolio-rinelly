@@ -52,13 +52,14 @@
         height: auto;
         padding-top: 2rem; 
         background-position: center bottom;
+        margin-bottom: 2rem;
     }
 
     h2 {
         font-size: 1.2rem;
         width: 90%;
     }
-    
+
     .icones-redes-sociais {
        justify-content: center;
        padding-left: 0;
