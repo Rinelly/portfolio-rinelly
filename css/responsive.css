@@ -50,28 +50,10 @@
 }
 
 /* Responsividade da seção apresentação */
-@media (max-width: 768px) {
-    #apresentacao {
-        min-height: auto;
-        height: auto;
-        padding-top: 2rem; 
-        background-position: center bottom;
-    }
-
-    h2 {
-        font-size: 1.2rem;
-        width: 90%;
-    }
-
-    .icones-redes-sociais {
-       justify-content: center;
-       padding-left: 0;
-       margin-bottom: clamp(5rem, 5vw, 2rem);
-    }
-}
 /*Versão smartphone*/
 @media (max-width: 480px) {
     #apresentacao{
+        min-height: auto;
         background-size: 30px;
     }
 
@@ -81,8 +63,8 @@
     }
 
    .icones-redes-sociais {
+        justify-content: center;
         gap: 2rem;
-        margin-bottom: clamp(5rem, 5vw, 2rem);
     }
 }
 
@@ -121,28 +103,16 @@
 
 /* Responsividade da seção Habilidades */
 @media (max-width: 768px) {
-    #secao-habilidades {
-        margin-top: 5%;
-    }
-
-    .imagens-habilidades {
-        text-align: center;
-        margin: 8% 0 4% 0;
-    }
-        .imagens-habilidades img {
-        padding: 1rem;
-        max-width: 60px;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .imagens-habilidades {
-        margin: 6% 0 3% 0;
-    }
 
     .imagens-habilidades img {
-        padding: 0.5rem;
+        padding: 1rem;
+        max-width: 100px;
+    }
+}
+/*Versão smartphone*/
+@media (max-width: 480px) {
+
+    .imagens-habilidades img {
         max-width: 50px;
     }
 }
@@ -169,7 +139,7 @@
         font-size: 0.9rem;
     }
 }
-
+/*Versão smartphone*/
 @media (max-width: 480px) {
     #secao-projetos {
         margin: 6% 0 4% 0;
@@ -183,25 +153,17 @@
 
 /* Responsividade da seção Contato */
 @media (max-width: 768px) {
+    #secao-contato{
+        min-height: auto;
+        padding: 2rem 0;
+    }
     .secao-contato {
         flex-direction: column;
-        padding: 0 2rem;
-        gap: 1.5rem;
+        align-items: center;
     }
 
-    .secao-contato .formulario {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .secao-contato .imagem-contato {
-        width: 80%;
-        max-width: 250px;
-        margin: 0 auto;
-    }
-
-    #nome, #email, #assunto, #msg {
-        width: 100%;
+    .imagem-contato{
+        width: 50%;
     }
 
     .btn-enviar {
@@ -209,11 +171,20 @@
         max-width: 200px;
     }
 }
-
+/*Versão smartphone*/
 @media (max-width: 480px) {
+    #secao-contato{
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .secao-contato {
-        padding: 0 1rem;
-        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
     }
 
     .secao-contato .imagem-contato {

@@ -1,11 +1,11 @@
-#secao-habilidades{
-    margin-top: 5%;
-}
+/* #secao-habilidades{
+   min-height: 100vh;
+} */
 
 .imagens-habilidades {
-   text-align: center; 
-   margin: 10% 0 5% 0;
-
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 .imagens-habilidades img {

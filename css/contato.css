@@ -1,22 +1,14 @@
-.titulo-contato {
-    margin: 5%;
+#secao-contato {
+    min-height: 70vh;    
 }
 
 .secao-contato {
-    position: relative;
+    /* min-height: calc(70vh - 50px); subtrai altura aproximada do título */
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
-}
-
-.icones-contato {
-    padding: 1rem;
-}
-
-.secao-contato form{
-    margin-left: 10%;  
 }
 
 input::placeholder, textarea::placeholder{
@@ -26,8 +18,8 @@ input::placeholder, textarea::placeholder{
 }
 
 #nome, #email, #assunto, #msg {
-    width: 400px;
-    height: 40px;
+    width: 100%;
+    max-width: 400px;
     margin-bottom: 2%;
 }
 
