@@ -1,15 +1,20 @@
 /* Responsividade para imagem do background */
 @media (max-width: 768px) {
     body {
-        background-size: 30%; /* reduz o tamanho da imagem */
-        background-position: right top; /* mantém no topo à direita */
+        background-size: 50%; /* reduz o tamanho da imagem */
+    }
+     
+    header {
+        backdrop-filter: blur(1px);
     }
 }
 
 @media (max-width: 480px) {
     body {
-        background-size: 20%; 
-        background-position: right top;
+        background-size: 40%; 
+    }
+    header {
+        backdrop-filter: none;
     }
 }
 
@@ -32,7 +37,6 @@
         padding: 1rem;
         z-index: 20;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-       
     }
 
     #menu-principal.ativo {
@@ -48,7 +52,7 @@
 /* Responsividade da seção apresentação */
 @media (max-width: 768px) {
     #apresentacao {
-        min-height: 50vh;
+        min-height: auto;
         height: auto;
         padding-top: 2rem; 
         background-position: center bottom;
@@ -64,11 +68,6 @@
        padding-left: 0;
        margin-bottom: clamp(5rem, 5vw, 2rem);
     }
-
-    .icones-redes-sociais a {
-        margin-right: 1rem;
-        margin-bottom: 0.5rem;
-    }
 }
 /*Versão smartphone*/
 @media (max-width: 480px) {
@@ -82,25 +81,23 @@
     }
 
    .icones-redes-sociais {
-       gap: 2rem;
-       margin-bottom: clamp(5rem, 5vw, 2rem);
+        gap: 2rem;
+        margin-bottom: clamp(5rem, 5vw, 2rem);
     }
 }
 
 /* Responsividade da seção Sobre Mim */
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
     #secao-sobre-mim{
-        margin-top: clamp(5rem, 5vw, 2rem);
+       min-height: auto;
     }
     .sobre-container {
-        padding: 0 2rem;
+        padding: 1.5rem;
     }
 
     .sobre-container::before {
         width: 40%;
-        max-width: 200px;
-        height: 100%;
-        left: 0;
+        opacity: 0.3;
     }
 
     .texto-sobre-mim {
@@ -118,36 +115,7 @@
         padding: 1rem;
         margin: 1rem auto;
         max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    #secao-sobre-mim{
-        margin-top: clamp(4.5rem, 5vw, 2rem);
-    }
-
-    .sobre-container {
-        padding: 0 1rem;
-    }
-
-    .sobre-container::before {
-        width: 60%;
-        max-width: 150px;
-    }
-
-    .texto-sobre-mim {
-        font-size: 0.9rem;
-        padding: 0.5rem;
-    }
-
-    .jornada {
-        padding: 0.8rem;
-        margin: 0.5rem auto;
-    }
-
-    .ano {
-        width: 50px;
-        font-size: 0.9rem;
+        background-color: rgba(255, 255, 255, 0.09);
     }
 }
 
