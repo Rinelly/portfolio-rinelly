@@ -18,12 +18,12 @@
 
 .sobre-container::before{
     content: '';
-    position: absolute; /* posição em relação ao .sobre-container */
-    left: 0;            /* distancia da borda esquerda */
-    top: 0;             /* distancia da borda superior */
-    width: 25%;       /* largura relativa ao container*/
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 25%; 
     max-width: 400px;
-    height: 100%;       /* altura do container */
+    height: 100%;
     background-image: url("../assets/image/esquerda.png");
     background-repeat: no-repeat;
     background-position: left center;
@@ -71,5 +71,10 @@
     display: inline-block;
     width: 60px;
 }
+
+.timeline-lista {
+    list-style: none;
+}
+
 
 

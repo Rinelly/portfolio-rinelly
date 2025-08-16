@@ -12,11 +12,9 @@
     padding: 2rem;
 }
 
-.imagem-contato {
-    max-width: 100%;   /* nunca passa da largura do container */
-    height: auto;      /* mantém proporção */
-    display: block;    /* tira espaçamentos esquisitos */
-    margin: 0 auto;    /* centraliza */
+.secao-contato img {
+    width: clamp(150px, 80%, 400px);
+    height: auto;
 }
 
 /* Alinhar o conteúdo interno do formulário */
@@ -45,7 +43,8 @@ input::placeholder, textarea::placeholder{
 }
 
 .btn-enviar {
-    width: 30%;
+    width: 80%;
+    max-width: auto;
     height: 50px;
     font-weight: 600;
     cursor: pointer;
