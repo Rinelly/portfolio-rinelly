@@ -175,31 +175,13 @@
 @media (max-width: 480px) {
     #secao-contato{
         min-height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .secao-contato {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-    }
-
-    .secao-contato .imagem-contato {
-        width: 70%;
-        max-width: 200px;
     }
     
-    #nome, #email, #assunto, #msg {
-        width: 100%;
+    .secao-contato {
+        grid-template-columns: 1fr; /* ícone em cima, formulário embaixo */
+        text-align: center;
     }
-
-    .btn-enviar {
-        width: 100%;
-        max-width: 180px;
-    }
+    
 }
 
 

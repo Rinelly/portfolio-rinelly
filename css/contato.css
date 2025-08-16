@@ -3,40 +3,58 @@
 }
 
 .secao-contato {
-    /* min-height: calc(70vh - 50px); subtrai altura aproximada do título */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
+    min-height: calc(70vh - 50px); /*subtrai altura aproximada do título*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center; 
     justify-content: center;
-    align-items: center;
+    padding: 2rem;
+}
+
+.imagem-contato {
+    max-width: 100%;   /* nunca passa da largura do container */
+    height: auto;      /* mantém proporção */
+    display: block;    /* tira espaçamentos esquisitos */
+    margin: 0 auto;    /* centraliza */
+}
+
+/* Alinhar o conteúdo interno do formulário */
+.secao-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 input::placeholder, textarea::placeholder{
     color: var(--cor-fundo);
     font-weight: 400;
     font-family:"Montserrat", serif; 
+    padding: 0.5rem;
 }
 
 #nome, #email, #assunto, #msg {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 2%;
+    width: 80%;
+    height: 40px;
+    padding: 0.8rem;
+    border-radius: 8px;
 }
 
 #msg {
-    height: 80px;
+    height: 100px;
 }
 
 .btn-enviar {
-    width: 150px;
+    width: 30%;
     height: 50px;
     font-weight: 600;
     cursor: pointer;
     border: none;
+    border-radius: 8px;
     color: var(--cor-fundo);
     background-color: var(--cor-principal);  
-    transform: translateX(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    transform: none;
 }
 
 .btn-enviar:hover{
