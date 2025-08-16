@@ -75,30 +75,31 @@
     }
 
     .sobre-container::before {
-        width: 40%;
+        width: 100%;
         opacity: 0.3;
     }
 
     .texto-sobre-mim {
-        font-size: 1rem;
-        padding: 0.5;
-    }
-
-    .conteudo-sobre {
-        gap: 1.5rem;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        padding: 0;
+        width: 100%;
     }
 
     .jornada {
-        padding: 1rem;
+        padding: 1.5rem;
         max-width: 100%;
         background-color: rgba(255, 255, 255, 0.09);
     }
+    .jornada .timeline-lista li {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
 }
-
 /* Responsividade da seção Habilidades */
 @media (max-width: 768px) {
-
     .imagens-habilidades img {
+        height: 200px;
         padding: 1rem;
         max-width: 80px;
         
