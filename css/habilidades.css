@@ -1,11 +1,14 @@
-/* #secao-habilidades{
-   min-height: 100vh;
-} */
+#secao-habilidades{
+   min-height: 100%;
+   
+}
 
 .imagens-habilidades {
     display: flex;
     justify-content: center;
     list-style: none;
+    margin: 5% 0 5% 0;
+    
 }
 
 .imagens-habilidades img {

@@ -65,9 +65,13 @@
     color: var(--cor-texto-claro);
 }
 
+.titulo-timeline {
+    color: var(--cor-principal);
+}
+
 .ano {
     font-weight: bold;
-    color: var(--cor-principal);
+    color: var(--cor-secundaria);
     display: inline-block;
     width: 60px;
 }

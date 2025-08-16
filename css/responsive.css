@@ -69,12 +69,9 @@
 }
 
 /* Responsividade da seção Sobre Mim */
-@media (max-width: 1150px) {
+@media (max-width: 1313px) {
     #secao-sobre-mim{
        min-height: auto;
-    }
-    .sobre-container {
-        padding: 1.5rem;
     }
 
     .sobre-container::before {
@@ -84,9 +81,7 @@
 
     .texto-sobre-mim {
         font-size: 1rem;
-        padding: 0.5rem;
-        max-width: 100%;
-        text-align: center;
+        padding: 0.5;
     }
 
     .conteudo-sobre {
@@ -95,7 +90,6 @@
 
     .jornada {
         padding: 1rem;
-        margin: 1rem auto;
         max-width: 100%;
         background-color: rgba(255, 255, 255, 0.09);
     }
@@ -106,51 +100,10 @@
 
     .imagens-habilidades img {
         padding: 1rem;
-        max-width: 100px;
+        max-width: 80px;
+        
     }
 }
-/*Versão smartphone*/
-@media (max-width: 480px) {
-
-    .imagens-habilidades img {
-        max-width: 50px;
-    }
-}
-
-/* Responsividade da seção Projetos */
-@media (max-width: 768px) {
-    #secao-projetos {
-        margin: 8% 0 5% 0;
-    }
-
-    .projetos {
-        flex-direction: column;
-        gap: 2rem;
-        margin: 2% 2% 5% 2%;
-    }
-
-    .projetos a {
-        width: 100%;
-        text-align: center;
-    }
-
-    .projetos p {
-        margin: 1% 0 5% 0;
-        font-size: 0.9rem;
-    }
-}
-/*Versão smartphone*/
-@media (max-width: 480px) {
-    #secao-projetos {
-        margin: 6% 0 4% 0;
-    }
-
-    .projetos p {
-        font-size: 0.8rem;
-        margin: 1% 0 4% 0;
-    }
-}
-
 /* Responsividade da seção Contato */
 @media (max-width: 768px) {
     #secao-contato{
