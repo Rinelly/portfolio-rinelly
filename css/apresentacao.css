@@ -37,6 +37,7 @@ h2 {
     list-style: none;
     gap: 1rem;
     margin-bottom: clamp(2rem, 5vw, 3rem);
+    cursor: pointer;
 }
 
 .icones-redes-sociais a {
