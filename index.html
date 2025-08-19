@@ -209,7 +209,7 @@
                 </div>
                 <!-- Formulário de contato -->
                 <div class="formulario">
-                    <form action="" method="post">
+                    <form id="form-contato">
                         <div>
                             <label for="nome"></label>
                             <input type="text" id="nome" name= "nome" placeholder="Nome" required />
@@ -238,6 +238,11 @@
     <footer>
         <span>Desenvolvido por Rinelly Vasconcelos</span>
     </footer>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    emailjs.init("dW-UnDDso0d6uXjY3");
+    </script>
     <!-- Script JavaScript principal -->
     <script src="index.js"></script>
 </body>
